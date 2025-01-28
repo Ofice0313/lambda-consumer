@@ -35,6 +35,10 @@ public class Product{
         return Objects.equals(name, product.name) && Objects.equals(price, product.price);
     }
 
+    public static void staticPriceUpdate(Product p){
+        p.setPrice(p.getPrice() * 1.1);
+    }
+
     @Override
     public int hashCode() {
         return Objects.hash(name, price);
