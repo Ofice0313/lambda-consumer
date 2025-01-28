@@ -39,6 +39,10 @@ public class Product{
         p.setPrice(p.getPrice() * 1.1);
     }
 
+    public void nonStaticPriceUpdate(){
+        price = price * 1.1;
+    }
+
     @Override
     public int hashCode() {
         return Objects.hash(name, price);
